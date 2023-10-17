@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./thibault.css">
+    <script src="./reservations.js"></script> 
     <title>Reservations</title>
 </head>
 <body>
@@ -16,22 +17,24 @@
     
         <nav>
             <ul>
-                <li>Menu</li>
-                <li>Reservations</li>
-                <li>Contact</li>
+                <li><a class="banner-link" href="../index.html">Home</a></li>
+                <li><a class="banner-link" href="../Luis/luis.html">Menu</a></li>
+                <li class="banner-link link-reservations">Reservations</li>
+                <li><a class="banner-link" href="../gust/gust.html">Contact</a></li>
             </ul>
         </nav>
         </div>
     </div>
 
     <div class="bottom-container">
-        <div class="reservation-menu">
+        <div class="reservation-left">
             
             <div class="persons">
                 <label for="persons">Persons</label> 
                 <select name="persons" id="persons">
+                    <option disabled selected value>How many?</option>
                     <option value="2">2</option>
-                    <option value="">3</option>
+                    <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
@@ -39,6 +42,7 @@
                     <option value="8">8</option>
                 </select>
             </div>
+            <aside class="max-persons">For over 8 people, please give us a call via the <a class="more-than-eight-contact" href="../gust/gust.html">contact page</a></aside>
 
             <div class="date">
                 <label for="date">Date</label>
@@ -48,6 +52,7 @@
             <div class="time">
                 <label for="time">Time</label> 
                 <select name="time" id="time">
+                    <option disabled selected value>What time?</option>
                     <option value="18:00">18:00</option>
                     <option value="18:30">18:30</option>
                     <option value="19:00">19:00</option>
@@ -56,23 +61,22 @@
                     <option value="20:30">20:30</option>
                     <option value="21:00">21:00</option>
                     <option value="21:30">21:30</option>
-                </select>  
+                </select>
             </div>
 
-            
+            <div class="remarks">
+                <label class="remarks" for="remarks"></label>
+                <textarea maxlength="250" placeholder="Please write any further remarks here.&#10(250 characters max)" class="remarks" id="remarks"></textarea>
+            </div>
 
+            <button class="make-reservation">Make reservation</button>
 
         </div>
-        <div class="reservation-img">
+
+        <div class="reservation-right">
             <img src="./img/inside.jpg" alt="a view of our restaurant">
         </div>
 
     </div>
-
-
-
-
-
-    
 </body>
 </html>

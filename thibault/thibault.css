@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .banner-container{
     display: flex;
     flex-direction: column;
@@ -6,6 +11,11 @@
     height: 35vh;
 
     background-color: black;
+    color: white;
+}
+
+.banner-link{
+    text-decoration: none;
     color: white;
 }
 
@@ -35,22 +45,71 @@ li{
     justify-content: space-around;
 }
 
-.reservation-menu{
+.reservation-left{
     display: flex;
     flex-direction: column;
     
     gap: 20px;
-    padding-top: 120px;
+    padding-top: 40px;
 }
 
-.reservation-img{
+.reservation-right{
     padding-top: 50px;
 }
 
 .persons, .time, .date{
     display: flex;
-    flex-direction: column;
 
     font-weight: bold;
+    font-size: 20px;
+}
+
+aside{
+    padding-left:100px;
+    margin-top: -18px;
+}
+
+label{
+    width: 100px;
+}
+
+.max-persons{
+    font-size: 12px;
+    font-weight:400;
+}
+
+.make-reservation{
+    color: white;
+    background-color: blue;
+
+    font-weight: bold;
+    padding: 8px;
+    width: 20ch;
+    margin-left: 75px;
+
+    border-radius: 50px;
+
+    cursor:pointer;
+}
+
+.remarks{
+    width: 50ch;
+    height: 100px;
+    padding-top: 5px;
+}
+
+#time, #persons, #date{
+    width:13ch;
+    padding-left: 0.3ch;
+}
+
+
+
+.link-reservations{
+    text-decoration:underline;
+}
+
+.more-than-eight-contact{
+    color: black;
 }
 
