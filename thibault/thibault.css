@@ -1,0 +1,56 @@
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 35vh;
+
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-size: 60px;
+    margin: 5px;
+}
+
+.slogan{
+    font-style: italic;
+    font-size: 18px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap:70px;
+}
+
+li{
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.reservation-menu{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    padding-top: 120px;
+}
+
+.reservation-img{
+    padding-top: 50px;
+}
+
+.persons, .time, .date{
+    display: flex;
+    flex-direction: column;
+
+    font-weight: bold;
+}
+
