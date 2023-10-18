@@ -6,6 +6,8 @@
 body{
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
     background: rgb(13,148,95);
     background: linear-gradient(90deg, rgba(13,148,95,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,44,1) 100%);
 }
@@ -22,10 +24,13 @@ body{
 
 }
 
-nav{
+/* nav{
     align-self: stretch;
     padding-top: 15px;    
-}
+} */
+
+
+
 
 ul{
     display: flex;
@@ -103,6 +108,41 @@ img{
 
 
 
+/* keyframes */
+
+@keyframes fader {
+    0% {background: url('./img/foodre.jpg');background-size:cover;}
+    25% {background: url('./img/insidere.jpg');background-size:cover;}
+    50% {background: url('./img/seafoodre.jpg');background-size:cover;}
+    75% {background: url('./img/venicere.jpg');background-size:cover;}
+    100% {background: url('./img/foodre.jpg');background-size:cover;}
+
+}
+
+
+#gallery{
+    border: thin black solid;
+    margin: 0px auto;
+    background: skyblue;
+    animation: fader 12s cubic-bezier(0.8,0,0,0.8) infinite;
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    color: beige;
+    height: 2vh;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+}
+
+
+
+
+
+/* end keyframes */
 
 @media (min-width: 1025px){  
     
@@ -214,7 +254,7 @@ img{
         width: 50ch;
         height: 100px;
         padding-top: 5px;
-        max width: 100px;
+        max-width: 100%;
     }
     
     #time, #persons, #date{
