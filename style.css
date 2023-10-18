@@ -65,6 +65,8 @@
     padding-top: 50rem;
     min-height: 120vh;
     position: relative;
+    display:flex;
+    justify-content: center;
   }
   
   .site-header-mask {
@@ -108,57 +110,24 @@
   
   
    
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #0E1317;
-  
-  }
-  
-  li {
-    float: left;
-    position: relative;
-   left: 900px;
-   top: 5px;
-  }
-  
-  li a {
-    display: block;
-    color: #9f7928;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-  }
-  
-  
-  li a:hover {
-    background-color: #161B21;
-  }
+
   
   
   
   
   
   .button-reservation {
-    position: relative;
-    bottom: 90px;
-    left: 600px;
+    align-items: center;
     background-color: #964105;
     border-radius: 25px;
     color: white;
     padding: 17px; 
     font-size: 16px;
     font-weight: bold;
-    box-shadow: 
-    inset 0 -3em 3em rgba(153, 2, 2, 0.3),
-    0 0 0 2px white,
-    0.3em 0.3em 1em rgba(201, 201, 201, 0.6);
+    margin-bottom: 60px;
   }
   
-  
+
   
   /*  Section 1 */
   .section1 {
