@@ -1,119 +1,236 @@
-
-
-.images img {
+:root {
+    --clr-primary: hsl(354, 77%, 53%);
+    --clr-secondary: rgb(41, 57, 226);
+    --clr-surface: hsl(0, 0%, 8%);
+    --clr-surface-muted: hsl(0, 0%, 4%);
+    --clr-surface-bright: hsl(0, 0%, 12%);
+    --clr-text: hsl(0, 0%, 85%);
+    --clr-text-muted: hsl(0, 0%, 70%);
+    --clr-text-bright: hsl(0, 0%, 97%);
+    --gradient: linear-gradient(-45deg, var(--clr-primary), var(--clr-secondary));
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    overflow-x: hidden ;
+  }
+  
+  img,
+  picture,
+  video,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  body {
+    font-family: system-ui;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    background: var(--clr-surface);
+    color: var(--clr-text);
+    background-color: #0E1317;
+  }
+  
+  section {
+    padding-block: 8rem;
+  }
+  
+  .container {
+    width: min(100% - 3rem, 55rem);
+    margin-inline: auto;
+  }
+  
+  .even-columns {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .site-header {
+    background-image: url("/sezin/jirayu-koontholjinda-tEoBrwgv1rc-unsplash.jpg");
+    background-position: bottom;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    padding-top: 50rem;
+    min-height: 100vh;
     position: relative;
-    left: 800px;
-    top: 50px;
-}
+  }
+  
+  .site-header-mask {
+    /*   --mask-source: url(/vector-black.svg);
+    --mask-position: bottom;
+    --mask-size: cover; */
+  
+    position: absolute;
+    inset:0px;
+    background: rgba(0, 0, 0, 0.25);
+  
+    -webkit-mask: url("/sezin/mask.svg");
+    -webkit-mask-position: bottom center;
+    -webkit-mask-size: 100%;
+  
+    -webkit-mask: url("/sezin/mask.svg");
+    
+  
+            mask: url("/sezin/mask.svg");
+            
+    -webkit-mask-position: bottom;
+            mask-position: bottom ;
+    -webkit-mask-size: cover;
+            mask-size: cover;
+  }
+  
+  .site-title {
+    text-align: left;
+    font-size: clamp(6rem, 2vw + 0.5rem, 9rem);
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    padding-left: 250px;
+    padding-bottom: 15px;
+  }
+  
+  
+  
+  
+   
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0E1317;
+  
+  }
+  
+  li {
+    float: left;
+    position: relative;
+   left: 900px;
+   top: 5px;
+  }
+  
+  li a {
+    display: block;
+    color: #9f7928;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  
+  li a:hover {
+    background-color: #161B21;
+  }
+  
+  
+  
+  
+  
+   
+  
+  
+  
+  .button-reservation {
+    position: relative;
+    left: 550px;
+    bottom: 130px;
+    background-color: #964105;
+    border-radius: 25px;
+    color: white;
+    padding: 17px; 
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 
+    inset 0 -3em 3em rgba(153, 2, 2, 0.3),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgba(201, 201, 201, 0.6);
+  }
+  
+  
+  
+  /*  Section 1 */
+  .section1 {
+   
+    background-color:#0E1317;
+    font-size:36px;
+    color: white;
+  }
+  
+  hr {
+    position: relative;
+    left: 600px;
+    
+  }
+  .chef-left {
+    position: relative;
+    top: 300px;
+    left: 100px;
+  }
+  
+  .chef-right {
+    position: relative;
+    left: 1000px;
+    bottom: 650px;
+  }
+  
+  .chef-text {
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+  }
+  
+  .chef-text h4 {
+    color: #9f7928;
+    font-size: 18px;
+    
+  }
+  
+  .chef-text h1 {
+    padding-top: 10px;
+    font-size: 50px;
+   
+  }
+  
+  .chef-text h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 27px;
+    color: #cdcdcd;
+    
+  }
+  
+  .chef-text p {
+    font-size: 18px;
+    color: rgb(84, 83, 83);
+    padding-bottom: 10px;
+  }
+  
+  .chef-text img {
+    padding-top: 10px;
+  
+  }
+  
+  .branding {
+    position: relative;
+    bottom: 900px;
+  }
 
 
-
-
-#scroll-animate
-{
-  overflow: hidden;
-}
-
-#scroll-animate-main
-{
-  width: 100%;
-  left: 0;
-  position: fixed;
-}
-
-#heightPage,
-#heightScroll
-{
-  width: 10px;
-  top: 0;
-  position: absolute;
-  z-index: 99;
-}
-
-#heightPage
-{
-  left: 0;
-}
-
-#heightScroll
-{
-  right: 0;
-}
-
-main
-{
-  width: 100%;
-  height: 100%;
-  background-color: #161B21;
-  top: 0;
-  position: fixed;
-  z-index: -1;
-}
-
-footer
-{
-  width: 100%;
-  height: 300px;
-  background: gray;
-  bottom: -300px;
-  position: fixed;
-  z-index: -1;
-}
-
-.content
-{
-  height: 1000px;
-  min-height: 1000px;
-  background: #0E1317;
-  position: relative;
-  z-index: 1;
-}
-
-.wrapper-parallax {
-  margin-top: 100%;
-  margin-bottom: 300px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-}
-
-h1 {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: Helvetica;
-  font-size: 150px;
-  color: #fff;
-  font-size: 40px;
-  z-index: 10;
-}
-
-
-
-.content h1{
-  line-height: 1000px;
-  color: #fff;
-}
-
-footer h1
-{
-  line-height: 300px;
-}
-
-main,
-footer,
-#scroll-animate-main
-{
-  -webkit-transition-property: all;
-     -moz-transition-property: all;
-      transition-property: all;
-
-  -webkit-transition-duration: 0.4s;
-     -moz-transition-duration: 0.4s;
-      transition-duration: 0.4s;
-
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
-      transition-timing-function: cubic-bezier(0, 0, 0, 1);
-}
+  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
