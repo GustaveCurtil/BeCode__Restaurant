@@ -5,22 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reservations.css">
     <link rel="stylesheet" href="../theme.css">
-    <script src="./reservations.js"></script> 
+    <!-- <script src="./reservations.js"></script>  -->
     <title>Reservations</title>
 </head>
 <body>
-    <nav>
+
+
+    <!-- nieuwe nav -->
+    <nav class="mobile">
+        <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Menu</li></a>
+            <a href="#"><li>Reservation</li></a>
+            <a href="#"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="pc">
         <h1 class="restaurant-name"> Lorem Ipsum</h1>
         <div class="navigation">
             <a href="../index.html">Home</a>
             <a href="../menu/menu.html">Menu</a>
-            <a class="on-page" href="../reservations/reservations.html">Reservation</a>
-            <a href="../contact/contact.html">Contact</a>
+            <a href="../reservations/reservations.html">Reservation</a>
+            <a class="on-page" href="../contact/contact.html">Contact</a>
         </div>
-    </nav>    
+    </nav>
+
+    <!-- einde nieuwe nav -->
+
 
     <div class="bottom-container">
-        <div class="reservation-left">            
+        <div class="reservation-left">
+            <div class="name">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="email-input">
+            </div>
+            <div class="email">
+                <label for="email-input">Email</label>
+                <input type="text" id="email-input" class="email-input">
+            </div>            
             <div class="persons">
                 <label for="persons">Persons</label> 
                 <select name="persons" id="persons">
@@ -58,11 +89,11 @@
 
             <div class="remarks">
                 <label class="remarks" for="remarks"></label>
-                <textarea maxlength="250" placeholder="Please write any further remarks here.&#10(250 characters max)" class="remarks" id="remarks"></textarea>
+                <textarea id="remarks" maxlength="250" placeholder="Please write any further remarks here.&#10(250 characters max)" class="remarks" id="remarks"></textarea>
             </div>
             
             <div class="button">
-                <button class="make-reservation">Make reservation</button>
+                <button id="reservation-button" class="make-reservation">Make reservation</button>
             </div>
             
 
@@ -70,7 +101,7 @@
 
         <div class="reservation-right">
             <div id="gallery">
-                <img src="./img/inside.jpg" style="opacity:0" alt="a view of our restaurant">
+                <img src="./img/insidere.jpg" style="opacity:0" alt="a view of our restaurant">
             </div>
         </div>
     </div>
@@ -79,7 +110,54 @@
         COPYRIGHT © BY SEZIN, LUIS, THIBAULT & GUST
     </footer>
 
+
+
+
 </body>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script>
+    const btn = document.getElementById('reservation-button');
+    btn.addEventListener('click', function(e){
+        e.preventDefault();
+        name = document.getElementById('name').value;
+        email = document.getElementById('email-input').value;
+        persons = document.getElementById('persons').value;
+        date = document.getElementById('date').value
+        time = document.getElementById('time').value
+        remarks = document.getElementById('remarks').value
+
+        body = `${name} would like to make a reservation for ${persons} people.\n
+The reservation is made for ${date} at ${time}.\n
+Remarks: ${remarks}\n
+Reply to email: ${email}`
+
+
+console.log(body)
+
+
+        subject = `Reservation request: ${name} - ${persons} people on ${date} at ${time}`
+        
+
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "ristorante.lorem.ipsum@gmail.com",
+            Password : "8F946B826939C15EC116DF428D27778B072D",
+            To : "ristorante.lorem.ipsum@gmail.com",
+            From : "ristorante.lorem.ipsum@gmail.com",
+            Subject : subject,
+            Body : body,
+        }).then(
+  message => alert("Abbiamo ricevuto la sua richiesta e le risponderemo al più presto.")
+  //alert('Abbiamo ricevuto la sua richiesta e le risponderemo al più presto.')
+);
+   
+    });
+
+</script>
+
 
 
 
