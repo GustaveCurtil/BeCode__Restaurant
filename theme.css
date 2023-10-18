@@ -148,7 +148,7 @@ a:hover {
     background: #cdcdcd;
     border-radius: 3px;
     
-    z-index: 1;
+    z-index: 10px;
     
     transform-origin: 4px 0px;
     
@@ -199,7 +199,7 @@ a:hover {
     * Make this absolute positioned
     * at the top left of the screen
     */
-#menu
+z
     {
     position: absolute;
     width: 300px;
@@ -222,6 +222,7 @@ a:hover {
     {
     padding: 10px 0;
     font-size: 22px;
+    z-index: 10;
     }
     
     /*
