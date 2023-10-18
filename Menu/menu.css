@@ -1,85 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
-/*NAVIGATION BAR DESKTOP*/
-nav {
-    height: 8vh;
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
-
-.restaurant-name {
-    font-size: 3.5rem;
-    color: rgb(248, 248, 236);
-    padding-left: 5vw;
-}
-
-.navigation {
-    padding-right: 5vw;
-    width: 30vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navigation a {
-    color: rgb(248, 248, 236);
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 300;
-}
-
-a:hover {
-    color: rgb(248, 248, 236);
-    text-decoration: underline;
-}
-
-.on-page:link {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-@media screen and (max-width:1000px) {
-    nav {
-        flex-direction: column;
-        height: 100px;
-        justify-content: center;
-        
-    }
-    .restaurant-name{
-        width: 100%;
-        padding:0;
-        text-align: center;
-    }
-    .navigation {
-        padding: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-.mobile {
-    display: none;
-}
-/* Mobile Nav */
-@media (max-width:480px) {
-    .pc {
-        display: none;
-    }
-    .mobile {
-        display: contents;
-    }
-    body {
     display: flex;
     margin: 0;
     padding: 0;
@@ -90,7 +9,7 @@ a:hover {
     font-family: "Avenir Next", "Avenir", sans-serif;
     }
     
-#menuToggle
+    #menuToggle
     {
     display: block;
     position: relative;
@@ -103,7 +22,7 @@ a:hover {
     user-select: none;
     }
     
-#menuToggle a
+    #menuToggle a
     {
     text-decoration: none;
     color: #232323;
@@ -111,13 +30,13 @@ a:hover {
     transition: color 0.3s ease;
     }
     
- #menuToggle a:hover
+    #menuToggle a:hover
     {
     color: tomato;
     }
     
     
-#menuToggle input
+    #menuToggle input
     {
     display: block;
     width: 40px;
@@ -137,7 +56,7 @@ a:hover {
     /*
     * Just a quick hamburger
     */
-#menuToggle span
+    #menuToggle span
     {
     display: block;
     width: 32px;
@@ -157,12 +76,12 @@ a:hover {
                 opacity 0.55s ease;
     }
     
-#menuToggle span:first-child
+    #menuToggle span:first-child
     {
     transform-origin: 0% 0%;
     }
     
-#menuToggle span:nth-last-child(2)
+    #menuToggle span:nth-last-child(2)
     {
     transform-origin: 0% 100%;
     }
@@ -171,7 +90,7 @@ a:hover {
     * Transform all the slices of hamburger
     * into a crossmark.
     */
-#menuToggle input:checked ~ span
+    #menuToggle input:checked ~ span
     {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
@@ -181,7 +100,7 @@ a:hover {
     /*
     * But let's hide the middle one.
     */
-#menuToggle input:checked ~ span:nth-last-child(3)
+    #menuToggle input:checked ~ span:nth-last-child(3)
     {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
@@ -190,7 +109,7 @@ a:hover {
     /*
     * Ohyeah and the last one should go the other direction
     */
-#menuToggle input:checked ~ span:nth-last-child(2)
+    #menuToggle input:checked ~ span:nth-last-child(2)
     {
     transform: rotate(-45deg) translate(0, -1px);
     }
@@ -199,7 +118,7 @@ a:hover {
     * Make this absolute positioned
     * at the top left of the screen
     */
-#menu
+    #menu
     {
     position: absolute;
     width: 300px;
@@ -218,7 +137,7 @@ a:hover {
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
     
-#menu li
+    #menu li
     {
     padding: 10px 0;
     font-size: 22px;
@@ -227,21 +146,21 @@ a:hover {
     /*
     * And let's slide it in from the left
     */
-#menuToggle input:checked ~ ul
+    #menuToggle input:checked ~ ul
     {
     transform: none;
     }
-}
-/*FOOTER*/
-footer {
-    background-color: black;
-    color: beige;
-    height: 2vh;
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 0.2rem;
-}
+    
+    #desktop {
+        display: none;
+    }
 
 
-
-
+    @media (min-width:480px) {
+        #menu, #menuToggle {
+            display: none;
+        }
+        #desktop {
+            display: contents;
+        }
+    }
