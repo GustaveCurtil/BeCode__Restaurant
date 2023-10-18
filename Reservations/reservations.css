@@ -65,12 +65,20 @@ h1{
 .reservation-right{
     padding-top: 50px;
     max-width: 100%;
+    width: 40%;
+    height:386px;
+
 }
 
 .link-reservations{
     text-decoration:underline;
 }
 
+
+#gallery{
+    height: 100%;
+    width: 100%
+}
 
 img{
     max-width: 100%;
@@ -82,6 +90,7 @@ img{
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+
 }
 
 .make-reservation{
@@ -121,11 +130,12 @@ img{
 
 
 #gallery{
-    border: thin black solid;
     margin: 0px auto;
     background: skyblue;
     animation: fader 12s cubic-bezier(0.8,0,0,0.8) infinite;
 }
+
+/* end keyframes */
 
 
 /*FOOTER*/
@@ -139,10 +149,6 @@ footer {
 }
 
 
-
-
-
-/* end keyframes */
 
 @media (min-width: 1025px){  
     
@@ -209,6 +215,7 @@ footer {
         flex-direction:column;
         align-items: center;
         width: 100%;
+        border: 10px solid blue;
     }
 
 
