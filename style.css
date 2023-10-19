@@ -118,14 +118,19 @@
   
   .button-reservation {
     align-items: center;
-    background-color: #964105;
+    background-color: #8a4602 ;
     border-radius: 25px;
-    color: white;
+    color: #ffffff;
     padding: 17px; 
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 60px;
   }
+             
+    
+ 
+   
+  
   
 
   
@@ -138,13 +143,15 @@
     align-items: center;
     justify-content: center;
     padding-top: 100px;
+    margin-bottom: 100px;
   }
   
 
   .chef-text{
     color: white;
     padding: 10px;
-    text-align: center;     
+    text-align: center;  
+    align-items: center;   
   }
 
   
@@ -153,6 +160,7 @@
     font-size: 16px;
     position: relative;
     top: 90px;
+
 }
 
 .chef-text h1 {
@@ -178,14 +186,14 @@
   
   .chef-text img {
     padding-top: 10px;
-    position: relative;
-    left: 100px;
-  
+  position: relative;
+  left: 120px;
+
   }
 
 hr {
     position: relative;
-    left: 100px;
+    left: 130px;
     
 }  
 
@@ -204,40 +212,292 @@ hr {
 
   .section2-1 {
     background-color: #161B21;
+    background-image: url(/sezin/casey-lee-awj7sRviVXo-unsplash.jpg);
+    background-repeat: 
+    no-repeat;
+    background-size: cover;
+  
   }
 
+  
+
  .section2 {
-    background-color: #161B21;
+   /* background-color: #161B21; */
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
     justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top:50px;
+  
     
 
  } 
- .h1heading {
-    background-color: #161B21;
-    position: relative;
-    top: 100px;
+ .section2-1 span{
+    
     font-size: 60px;
-    text-align: center;
-  
+    font-family: 'system-ui';
+   
+}
+.section2-1-text {
+  text-align: center;
 }
 
-
-  
-
-main{
-    display: flex;
-    flex-direction: column;
-}
-
-
+.section2-1 h3 {
+  color: #9f7928;
+  font-size: 16px;
+  padding-top:10px;
+  position: relative;
+  top: 30px;
   
  
+}
+
+.spacials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0E1317;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  height: 500px;
+  overflow-y: hidden;
+}
+
+
+.special-text {
+position: relative;
+top: 130px;
+left: -40px;
+width: 300px;
+
+}
+
+.special-text span {
+  position: relative;
+    font-size: 16px;
+    color: rgb(84, 83, 83);
+  
+  }
+
+  .spacials img {
+     position: relative;
+    left: 130px;
+    top: 30px;
+    width: 300px;
+    height: 200px;
+    border: none;
+  }
+
+  .arrow-button {
+    display: flex;
+    color: #222c35;
+    background-image: linear-gradient(to right, #61470d 0%, #f1c75d  51%, #61470d  100%);
+    padding: 10px 16px;
+    border-radius: 20px;
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+    
+}
+.special-text h3 {
+  color: #9f7928;
+  font-size: 16px;
+}
+.spacials a {
+  text-decoration: none;
+}
+
+.arrow-button > .arrow {
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #C2FFE9;
+    border-bottom: 2px solid #C2FFE9;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 6px;
+    transition: all .3s ease;
+}
+
+.arrow-button > .arrow::before {
+    display: block;
+    background-color: currentColor;
+    width: 3px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+.arrow-button:hover > .arrow {
+    transform: rotate(-45deg) translate(4px, 4px);
+   background-image: linear-gradient(to right, #61470d 0%, #f1c75d  51%, #61470d  100%);
+}
+
+.arrow-button:hover > .arrow::before {
+    opacity: 1;
+    width: 8px;
+}
+
+.arrow-button:hover {
+  background-image: linear-gradient(to right, #61470d 0%, #f1c75d  51%, #61470d  100%);
+  color: #222c35;
+}
+
+
+
+.menu-offers {
+  background-image: url(/sezin/back-section-menu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  overflow-y: hidden;
+}
+
+.menu-offers h1 {
+  position: relative;
+  left: 720px;
+  top: 25px;
+  font-size: 60px;
+  font-family: 'system-ui';
+}
+
+.menu-offers button {
+  position: relative;
+  left: 890px;
+  bottom: 10px;
+  color: #222c35;
+  background-image: linear-gradient(to right, #61470d 0%, #f1c75d  51%, #61470d  100%);
+
+}
+
+ .banner{
+    position: relative;
+    left: 290px;
+    bottom: 100px;
+    width: 50%;
+    margin: 1em auto;
+    padding: .3em .6em;
+   
+    
+  }
+
+  p {
+    font-size: .9em;
+    color:#0E1317;
+    margin-bottom: 1.5em;
+    font-style: italic;
+  }
+
+  h3 {
+    
+    position: relative;
+    font-weight: 700;
+    margin: .7em 0 1em 0;
+  }
+  
+ .price {
+    position: relative;
+    left: 400px;
+    color: #af8a3b;
+  }
+ 
+.testemonials-heading {
+  position: relative;
+  left: 50px;
+  top: 190px;
+  font-size: 40px;
+  font-family: 'system-ui';
+  
+  }
+
+.testemonials-heading button {
+    position: relative;
+    top: 60px;
+    left: -220px;
+    color: #222c35;
+    background-image: linear-gradient(to right, #57400c 0%, #ffd773  51%, #61470d  100%);
+
+  }
+.testemonials {
+ background-color: #0E1317;
+ background-image: url(/sezin/backlast.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding-top: 300px;
+ background-position: bottom;
+ display: flex;
+ flex-direction: row;
+
+}
+
+
+.testemonials-1 {
+  padding: 30px;
+  background-image: url(/sezin/testemonials-back.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
+  left: -100px;
+ position: relative;
+ bottom: 300px;
+ left: 600px;
+  z-index: 10px;
+ 
+}
+
+.testemonials-2 {
+  padding: 30px;
+  background-image: url(/sezin/testemonials-back.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
+  left: -50px;
+ position: relative;
+ bottom: 300px;
+ left: 650px;
+  z-index: 10px;
+}
+
+.testemonials img {
+  position: relative;
+bottom: 28px;
+}
+
+
+.testemonials p {
+position: relative;
+top: 50px;
+    font-size: 16px;
+    color: rgb(84, 83, 83);
+    padding-bottom: 10px;
+
+}
+
+.testemonials h4 {
+  color: #9f7928;
+    font-size: 14px;
+    position: relative;
+    top: 30px;
+    left: 70px;
+}
+
+.testemonials span {
+  position: relative;
+  top: 30px;
+  left: 70px;
+  font-size: 16px;
+}
+
 
 
   
