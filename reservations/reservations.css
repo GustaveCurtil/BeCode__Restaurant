@@ -21,10 +21,10 @@ body{
 }
 
 .reservation-right{
-    padding-top: 50px;
+    padding: 50px 0px;
     max-width: 100%;
     width: 40%;
-    height:386px;
+    height:auto;
 }
 
 
@@ -36,6 +36,8 @@ body{
 img{
     max-width: 100%;
     max-height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .make-reservation{
@@ -54,7 +56,7 @@ img{
 }
 
 .remarks{
-    width: 50ch;
+    width: 70ch;
     max-width: 100%;
     height: 100px;
     padding-top: 5px;
@@ -109,17 +111,87 @@ img{
     }    
 }
 
+@media (max-width: 1000px){
+    body{
+        display: flex;
+    }
+    .bottom-container{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 100%;
+    }
 
 
-@media (max-width: 1000px) and (min-width:320px){
+    .reservation-left{
+        display: flex;
+        flex-direction: column;   
+        gap: 20px;
+        padding-top: 40px;
+        padding-left: 10px;
+        max-width: 100%;
+    }
+
+    label{
+        width: 140px;
+    }
+       
+    .persons, .time, .date, .name, .email{
+        display: flex;
+    
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    
+    aside{
+        padding-left:142px;
+        margin-top: -18px;
+    }
+
+    .button{
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+    
+    .max-persons{
+        font-size: 15px;
+        font-weight:400;
+    }
+     
+    .remarks{
+        width: 98%;
+        height: 100px;
+        padding-top: 5px;
+        max-width: 100%;
+    }
+    
+    #time, #persons, #date{
+        width:13ch;
+        padding-left: 0.3ch;
+    }
+    
+    .more-than-eight-contact{
+        color: black;
+    }
+}
+
+
+/* and (min-width:320px) */
+@media (max-width: 480px) {
 
     body {
         display: block;
         overflow-y: auto;
     }
 
+    .reservation-right{
+        width: 100%;
+    }
 
-    .bottom-container{
+
+    /* .bottom-container{
         display: flex;
         flex-direction:column;
         align-items: center;
@@ -179,5 +251,5 @@ img{
     
     .more-than-eight-contact{
         color: black;
-    }  
+    }   */
 }
