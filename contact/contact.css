@@ -3,11 +3,12 @@
     margin: 0;
 }
 
-body {
+body, html {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 

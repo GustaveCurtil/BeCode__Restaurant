@@ -32,9 +32,7 @@
   }
   
   body {
-    font-family: system-ui;
     font-size: 1.125rem;
-    line-height: 1.6;
     background: var(--clr-surface);
     color: var(--clr-text);
     background-color: #0E1317;
@@ -155,20 +153,11 @@
     top: 90px;
 }
 
-.chef-text h1 {
+  .chef-text h1 {
     padding-top: 10px;
-    font-size: 60px;
     position: relative;
     top: 25px;
 }
-
-.chef-text h3 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 27px;
-    color: #cdcdcd;
-    
-  }
 
   .chef-text p {
     font-size: 18px;

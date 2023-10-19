@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow-y: hidden;
     justify-content: space-between;
     background: rgb(13,148,95);
     background: linear-gradient(90deg, rgba(13,148,95,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,44,1) 100%);
@@ -137,16 +138,6 @@ img{
 
 /* end keyframes */
 
-
-/*FOOTER*/
-footer {
-    background-color: black;
-    color: beige;
-    height: 2vh;
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 0.2rem;
-}
 
 
 
