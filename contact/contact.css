@@ -4,8 +4,6 @@
 }
 
 body, html {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     width: 100vw;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -65,6 +63,16 @@ body, html {
     justify-content: center;
 }
 
+.info a{
+    color: black;
+    font-style: italic;
+} 
+
+.info a:hover {
+    color: black;
+    font-style: normal;
+} 
+
 p {
     text-align: center;
 }
@@ -76,12 +84,19 @@ table {
     border-collapse: collapse;
 }
 
+tr {
+    border-bottom: 1px rgb(0, 0, 0) solid;
+}
+
+tr:last-child{
+    border-bottom: 0px rgb(0, 0, 0) solid;
+}
+
 td {
     width: 100px;
     text-align: center;
-    border: 1px rgb(182, 182, 182) solid;
-
 }
+
 .maps {
     background-color: rgb(255, 255, 255);
     width:100%;
