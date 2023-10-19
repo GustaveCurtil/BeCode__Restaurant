@@ -13,44 +13,11 @@ body{
     background: linear-gradient(90deg, rgba(13,148,95,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,44,1) 100%);
 }
 
-.banner-container{
+.bottom-container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
- 
-    height: 30vh;
-
-    background-color: black;
-    color: white;
-
-}
-
-
-
-ul{
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    list-style: none;
-    gap:8%;
-  
-}
-
-li{
-    padding-top: 25px;
-    /* font-size: clamp(2.5vh,30px,4vh); */
-    font-size: clamp(1vw, 30px, 5vw)
-}
-
-.banner-link{
-    text-decoration: none;
-    color: white;
-}
-
-
-.slogan{
-    font-style: italic;
-    font-size: 3.5vh;
+    width: 100%;
 }
 
 .reservation-right{
@@ -58,11 +25,6 @@ li{
     max-width: 100%;
     width: 40%;
     height:386px;
-
-}
-
-.link-reservations{
-    text-decoration:underline;
 }
 
 
@@ -74,14 +36,6 @@ li{
 img{
     max-width: 100%;
     max-height: 100%;
-}
-
-.bottom-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-
 }
 
 .make-reservation{
@@ -130,28 +84,15 @@ img{
 
 
 
-
-
-@media (max-width: 1001px){ 
-    /* body {
-        display: block;
-        overflow-y: auto;
-    }
+@media (min-width: 1001px){ 
     
-    label{
-        width: 100px;
-    } */
-
-    /* .reservation-left{
+    .reservation-left{
         display: flex;
         flex-direction: column;
-        
-        gap: 20px;
-        padding-top: 40px;
-
+        gap:20px;
     }
-        */
-    /* .persons, .time, .date, .name, .email{
+
+    .persons, .time, .date, .name, .email{
         display: flex;
     
         font-weight: bold;
@@ -159,35 +100,13 @@ img{
     }
 
     label{
-        padding-right: 50px;
+        width: 140px;
     }
-    
+
     aside{
-        padding-left: 150px;
+        padding-left:140px;
         margin-top: -18px;
-    }
-
-    
-    .max-persons{
-        font-size: 18px;
-        font-weight:100;
-    }
-
-    .button{
-        padding:40px 0px 0px  0px;
-        
-    }
-        
-    #time, #persons, #date{
-        width:13ch;
-        padding-left: 0.3ch;
-    }
-    
-    
-    .more-than-eight-contact{
-        color: black;
-    } */
-    
+    }    
 }
 
 
@@ -219,7 +138,7 @@ img{
     }
 
     label{
-        width: 120px;
+        width: 140px;
     }
        
     .persons, .time, .date, .name, .email{
@@ -231,7 +150,7 @@ img{
 
     
     aside{
-        padding-left:170px;
+        padding-left:142px;
         margin-top: -18px;
     }
 
