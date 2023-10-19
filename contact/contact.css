@@ -110,7 +110,9 @@ iframe{
 }
 
 @media screen and (max-width:1000px) {
-
+    body {
+        overflow-y: auto;
+    }
     .pictures-header {
         padding: 2vh 0 2vh 0;
     }
