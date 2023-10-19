@@ -6,7 +6,24 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    line-height: 1.6;
+    height: 100vh;
 }
+
+/*font size*/
+h1 {
+    font-size: 60px;
+}
+
+h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 27px;
+    color: #cdcdcd;
+}
+
+
+
 
 /*NAVIGATION BAR DESKTOP*/
 nav {
@@ -17,19 +34,20 @@ nav {
     align-items: center;
     padding-left: 10vw;
     padding-right: 10vw;
+    overflow-y: hidden;
 }
 
 .restaurant-name {
     font-size: 3.5rem;
     color: rgb(248, 248, 236);
-    padding-left: 5vw;
+    font-style: italic;
 }
 
 .navigation {
-    padding-right: 5vw;
     width: 30vw;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .navigation a {
@@ -50,6 +68,9 @@ a:hover {
 }
 
 @media screen and (max-width:1000px) {
+    body {
+        overflow-y: auto;
+    }
     nav {
         flex-direction: column;
         height: 100px;
@@ -59,9 +80,12 @@ a:hover {
     .restaurant-name{
         width: 100%;
         padding:0;
+        margin: 0;
         text-align: center;
+        font-size: 1.5rem;
     }
     .navigation {
+        margin: 0;
         padding: 0;
         width: 100%;
         display: flex;
@@ -148,7 +172,7 @@ a:hover {
     background: #cdcdcd;
     border-radius: 3px;
     
-    z-index: 1;
+    z-index: 10px;
     
     transform-origin: 4px 0px;
     
@@ -199,7 +223,7 @@ a:hover {
     * Make this absolute positioned
     * at the top left of the screen
     */
-#menu
+z
     {
     position: absolute;
     width: 300px;
@@ -222,6 +246,7 @@ a:hover {
     {
     padding: 10px 0;
     font-size: 22px;
+    z-index: 10;
     }
     
     /*
@@ -240,6 +265,8 @@ footer {
     text-align: center;
     font-weight: 400;
     letter-spacing: 0.2rem;
+    font-size: 12px;
+    overflow-y: hidden;
 }
 
 

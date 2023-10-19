@@ -4,9 +4,9 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
+
     height: 100vh;
+    overflow-y: hidden;
     justify-content: space-between;
     background: rgb(13,148,95);
     background: linear-gradient(90deg, rgba(13,148,95,1) 0%, rgba(255,255,255,1) 50%, rgba(255,0,44,1) 100%);
@@ -23,12 +23,6 @@ body{
     color: white;
 
 }
-
-/* nav{
-    align-self: stretch;
-    padding-top: 15px;    
-} */
-
 
 
 
@@ -52,10 +46,6 @@ li{
     color: white;
 }
 
-h1{
-    font-size: clamp(5vh,73px, 7vh);
-    margin: 5px;
-}
 
 .slogan{
     font-style: italic;
@@ -65,12 +55,20 @@ h1{
 .reservation-right{
     padding-top: 50px;
     max-width: 100%;
+    width: 40%;
+    height:386px;
+
 }
 
 .link-reservations{
     text-decoration:underline;
 }
 
+
+#gallery{
+    height: 100%;
+    width: 100%
+}
 
 img{
     max-width: 100%;
@@ -82,6 +80,7 @@ img{
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+
 }
 
 .make-reservation{
@@ -121,30 +120,21 @@ img{
 
 
 #gallery{
-    border: thin black solid;
     margin: 0px auto;
     background: skyblue;
     animation: fader 12s cubic-bezier(0.8,0,0,0.8) infinite;
 }
 
-
-/*FOOTER*/
-footer {
-    background-color: black;
-    color: beige;
-    height: 2vh;
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 0.2rem;
-}
-
-
-
-
-
 /* end keyframes */
 
-@media (min-width: 1025px){  
+
+
+
+
+@media (min-width: 1001px){ 
+    body {
+        overflow-y: auto;
+    }
     
     label{
         width: 100px;
@@ -159,22 +149,26 @@ footer {
 
     }
        
-    .persons, .time, .date{
+    .persons, .time, .date, .name, .email{
         display: flex;
     
         font-weight: bold;
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    label{
+        padding-right: 50px;
     }
     
     aside{
-        padding-left:100px;
+        padding-left: 150px;
         margin-top: -18px;
     }
 
     
     .max-persons{
-        font-size: 12px;
-        font-weight:400;
+        font-size: 18px;
+        font-weight:100;
     }
 
     .button{
@@ -202,7 +196,7 @@ footer {
 }
 
 
-@media (max-width: 1024px) and (min-width:320px){
+@media (max-width: 1000px) and (min-width:320px){
 
     .bottom-container{
         display: flex;
@@ -226,7 +220,7 @@ footer {
         width: 120px;
     }
        
-    .persons, .time, .date{
+    .persons, .time, .date, .name, .email{
         display: flex;
     
         font-weight: bold;

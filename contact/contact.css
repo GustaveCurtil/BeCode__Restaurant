@@ -3,11 +3,12 @@
     margin: 0;
 }
 
-body {
+body, html {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -141,5 +142,16 @@ iframe{
 }
 
 #telephonepic {
-    width: 80%;
+    width: 50%;
+    object-fit: contain;
+    animation-name: trillen;
+    animation-duration: 0.008s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes trillen {
+0%   {transform: translateX(-1px);transform: rotate(-1deg);}
+100% {transform: translateX(1px);transform: rotate(1deg);}
 }
