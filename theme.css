@@ -102,6 +102,7 @@ a:hover {
     }
     .mobile {
         display: contents;
+        background: #232323;
     }
     body {
     display: flex;
@@ -109,7 +110,6 @@ a:hover {
     padding: 0;
     
     /* make it look decent enough */
-    background: #232323;
     color: #cdcdcd;
     font-family: "Avenir Next", "Avenir", sans-serif;
     }
@@ -223,7 +223,7 @@ a:hover {
     * Make this absolute positioned
     * at the top left of the screen
     */
-z
+#menu
     {
     position: absolute;
     width: 300px;
