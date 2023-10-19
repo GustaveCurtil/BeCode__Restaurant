@@ -8,7 +8,6 @@ body {
     font-weight: 400;
     line-height: 1.6;
     height: 100vh;
-    overflow-y: hidden;
 }
 
 /*font size*/
@@ -35,16 +34,16 @@ nav {
     align-items: center;
     padding-left: 10vw;
     padding-right: 10vw;
+    overflow-y: hidden;
 }
 
 .restaurant-name {
     font-size: 3.5rem;
     color: rgb(248, 248, 236);
-    padding-left: 5vw;
+    font-style: italic;
 }
 
 .navigation {
-    padding-right: 5vw;
     width: 30vw;
     display: flex;
     justify-content: space-between;
@@ -69,6 +68,9 @@ a:hover {
 }
 
 @media screen and (max-width:1000px) {
+    body {
+        overflow-y: auto;
+    }
     nav {
         flex-direction: column;
         height: 100px;
@@ -78,9 +80,12 @@ a:hover {
     .restaurant-name{
         width: 100%;
         padding:0;
+        margin: 0;
         text-align: center;
+        font-size: 1.5rem;
     }
     .navigation {
+        margin: 0;
         padding: 0;
         width: 100%;
         display: flex;
@@ -261,6 +266,7 @@ footer {
     font-weight: 400;
     letter-spacing: 0.2rem;
     font-size: 12px;
+    overflow-y: hidden;
 }
 
 

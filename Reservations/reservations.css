@@ -4,8 +4,7 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
+
     height: 100vh;
     overflow-y: hidden;
     justify-content: space-between;
@@ -53,10 +52,6 @@ li{
     color: white;
 }
 
-h1{
-    font-size: clamp(5vh,73px, 7vh);
-    margin: 5px;
-}
 
 .slogan{
     font-style: italic;
@@ -142,7 +137,10 @@ img{
 
 
 @media (min-width: 1025px){  
-    
+    body {
+        overflow-y: auto;
+    }
+
     label{
         width: 100px;
     }
