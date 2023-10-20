@@ -1,6 +1,6 @@
-Project title: Startup
+#Project title: Startup
 
-Ristorante Lorem Ipsum
+##Ristorante Lorem Ipsum
 
 A traditional italian restaurant located in Lorem Ipsum.
 The website is the perfect invitation to our restaurant, where you can easily get a reservation.
@@ -10,7 +10,8 @@ You can take in the atmosphere of a  real authentic italian restaurant.
 
 https://lorem-ipsum-ristorante.netlify.app/
 
-https://github.com/Thibault-be
-https://github.com/GustaveCurtil
-https://github.com/SezinAkbulut
-https://github.com/LuisMaja
+**Credits**
+*https://github.com/Thibault-be
+*https://github.com/GustaveCurtil
+*https://github.com/SezinAkbulut
+*https://github.com/LuisMaja
