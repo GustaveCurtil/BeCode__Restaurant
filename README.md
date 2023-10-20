@@ -11,7 +11,6 @@ Ristorante Lorem Ipsum is a traditional Italian restaurant located in Lorem Ipsu
 - [GustaveCurtil](https://github.com/GustaveCurtil)
 - [SezinAkbulut](https://github.com/SezinAkbulut)
 - [LuisMaja](https://github.com/LuisMaja)
-With these Markdown formatting improvements, your README.md should display correctly on GitHub with headers, bullet points, and clickable links. You can copy and paste this improved version into your README.md file on GitHub.
 
 
 
