@@ -1,17 +1,20 @@
-#Project title: Startup
+# Project Title: Ristorante Lorem Ipsum
 
-##Ristorante Lorem Ipsum
+## Description
+Ristorante Lorem Ipsum is a traditional Italian restaurant located in Lorem Ipsum. This website serves as an invitation to our restaurant, allowing you to easily make a reservation. Explore our menu and discover a variety of traditional Italian dishes and desserts. All the information you need to contact us, including our opening hours and location, can be found on our contact page. Immerse yourself in the authentic Italian restaurant experience.
 
-A traditional italian restaurant located in Lorem Ipsum.
-The website is the perfect invitation to our restaurant, where you can easily get a reservation.
-Please, do have a look at our menu and be amazed at the several traditional dishes and desserts we offer.
-All our info for contact can be found on our contact page, wich also include our opening hours and location.
-You can take in the atmosphere of a  real authentic italian restaurant.
+## Website
+[Visit our website](https://lorem-ipsum-ristorante.netlify.app/)
 
-https://lorem-ipsum-ristorante.netlify.app/
+## Credits
+- [Thibault-be](https://github.com/Thibault-be)
+- [GustaveCurtil](https://github.com/GustaveCurtil)
+- [SezinAkbulut](https://github.com/SezinAkbulut)
+- [LuisMaja](https://github.com/LuisMaja)
+With these Markdown formatting improvements, your README.md should display correctly on GitHub with headers, bullet points, and clickable links. You can copy and paste this improved version into your README.md file on GitHub.
 
-**Credits**
-*https://github.com/Thibault-be
-*https://github.com/GustaveCurtil
-*https://github.com/SezinAkbulut
-*https://github.com/LuisMaja
+
+
+
+
+
